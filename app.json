@@ -51,8 +51,7 @@
           "photosPermission": "天目需要访问相册来保存扫描结果",
           "savePhotosPermission": "天目需要保存扫描结果到相册"
         }
-      ],
-      "@react-native-community/datetimepicker"
+      ]
     ],
     "extra": {
       "eas": {
