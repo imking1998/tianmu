@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "天目",
+    "slug": "tianmu",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tianmu.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "天目需要使用相机来识别周围物品的五行属性",
+        "NSMicrophoneUsageDescription": "天目需要使用麦克风进行视频录制"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0D0D0D"
+      },
+      "package": "com.tianmu.app",
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "INTERNET"
+      ]
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "天目需要使用相机来识别周围物品的五行属性"
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "天目需要访问相册来保存扫描结果",
+          "savePhotosPermission": "天目需要保存扫描结果到相册"
+        }
+      ],
+      "@react-native-community/datetimepicker"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "tianmu-ar-app"
+      }
+    }
+  }
+}
