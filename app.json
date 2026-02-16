@@ -47,9 +47,7 @@
       "@react-native-community/datetimepicker"
     ],
     "extra": {
-      "eas": {
-        "projectId": "tianmu-ar-app"
-      }
+      "eas": {}
     }
   }
 }
